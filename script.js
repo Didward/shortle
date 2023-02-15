@@ -12,7 +12,8 @@ function generateUrlCode() {
 }
 
 // Define a function to shorten a URL
-function shortenUrl() {
+function shortenUrl(event) {
+  event.preventDefault();
   const urlInput = document.getElementById("url");
   const shortenedUrlLink = document.getElementById("shortenedUrl");
 
